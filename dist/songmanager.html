@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Songs</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optionally add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container my-5">
+
+    <div id="greeting" class="text-center mb-4"></div>
+    
+    <h2 class="text-center">Top Songs</h2>
+
+    <div class="mb-4">
+        <h3>Add Song</h3>
+        <form id="addSong" class="form-group">
+            <input type="text" id="titleInput" class="form-control mb-2" placeholder="Enter Title" required><br>
+            <input type="text" id="artistInput" class="form-control mb-2" placeholder="Enter Artist Name" required><br>  
+            <input type="text" id="yearInput" class="form-control mb-2" placeholder="Enter Year Released" required><br>
+            <input type="submit" class="btn btn-primary" value="Save Song"><br><br>
+        </form>
+    </div>
+
+    <div class="mb-4">
+        <h3>Delete Song</h3>
+        <form id="deleteSong" class="form-group">
+            <input type="text" id="deleteTitleInput" class="form-control mb-2" placeholder="Enter Title to Delete" required><br>
+            <input type="submit" class="btn btn-danger" value="Delete Song"><br><br>    
+        </form>
+    </div>
+
+    <h3 class="mb-3">Song List</h3>
+    <div id="songList" class="list-group">
+        <!-- Songs will be dynamically added here -->
+    </div>
+
+    <script src="songmanager.bundle.js"></script>
+</body>
+</html>
