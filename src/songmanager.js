@@ -11,9 +11,9 @@ const saveSong = async function () {
     
   
     try{
-      //This will be the new Doc ID
+      
       const songRef = doc(db,"songs", songName.toLowerCase())
-      //cityRef is the first param to set docID
+     
       await setDoc(songRef, {
         title:songName,
         artist:artistName,
